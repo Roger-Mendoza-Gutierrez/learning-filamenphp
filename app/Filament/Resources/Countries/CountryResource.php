@@ -22,7 +22,10 @@ class CountryResource extends Resource
 {
     protected static ?string $model = Country::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-flag';
+    protected static string|\UnitEnum|null $navigationGroup = 'Sistem Management';
+    protected static ?int $navigationSort = 3;
+
 
     protected static ?string $recordTitleAttribute = 'name';
 

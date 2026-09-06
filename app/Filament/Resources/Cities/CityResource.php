@@ -18,11 +18,13 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
+
 class CityResource extends Resource
 {
     protected static ?string $model = City::class;
-
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|\UnitEnum|null $navigationGroup = 'Sistem Management';
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-building-office-2';
+    protected static ?int $navigationSort = 5;
 
     protected static ?string $recordTitleAttribute = 'name';
 
