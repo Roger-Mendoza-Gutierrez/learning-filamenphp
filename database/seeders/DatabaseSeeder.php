@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
-
+        $this->call(CountriesTableSeeder::class);
+        
         User::factory()->create([
             'name' => 'Administrador',
             'email' => 'admin@admin.com',

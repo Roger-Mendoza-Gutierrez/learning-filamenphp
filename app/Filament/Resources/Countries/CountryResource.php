@@ -24,7 +24,7 @@ class CountryResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-flag';
     protected static string|\UnitEnum|null $navigationGroup = 'Sistem Management';
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 5;
 
 
     protected static ?string $recordTitleAttribute = 'name';
